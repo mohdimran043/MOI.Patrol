@@ -20,30 +20,30 @@
             <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink=""><span class="glyphicon glyphicon-home"></span></a></li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Devices</a>
+              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Maintainence</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" routerLink="/mapviewer">Devices Dashboard</a>
-                <a class="dropdown-item" routerLink="/mapviewer">View Edit Devices</a>
+                  <a class="dropdown-item" routerLink="/patrolcars">Patrol Cars</a>
+
+                  <a class="dropdown-item" routerLink="/patrolcarsinventory">Patrol Cars Inventory</a>
+                  <a class="dropdown-item" routerLink="/handhelds">HandHeld</a>
+                <a class="dropdown-item" routerLink="/mapviewer">HandHeld Inventory</a>
+                <a class="dropdown-item"  routerLink="/accessories">Accessories</a>
+                <a class="dropdown-item" routerLink="/mapviewer">Accessory Inventory</a>
+             
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Dispatcher</a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item"  routerLink="/dispatcher">Dispatcher</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Add Devices</a>
+               
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
+              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Operations</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" routerLink="/mapviewer">Event Dashboard</a>
-
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Add Event</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Patrolling</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" routerLink="/mapviewer">Patrolling Dashboard</a>
-
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Add  Car</a>
+               
               </div>
             </li>
             <li class="nav-item dropdown">

@@ -60,6 +60,18 @@ import { ProgramSettingComponent } from "./components/controls/program-setting.c
 import { RoleEditorComponent } from "./components/controls/role-editor.component";
 import { DxTreeViewModule } from "../../node_modules/devextreme-angular";
 
+import { DxMenuModule,DxContextMenuModule,DxSelectBoxModule,DxPopupModule,DxDataGridModule,DxButtonModule ,DxTemplateModule,DxLoadIndicatorModule,DxLoadPanelModule, DxTabPanelModule,DxCheckBoxModule } from "devextreme-angular";
+import { CommonService } from './services/common.service';
+import { DeviceinventoryComponent } from './components/maintainence/deviceinventory/deviceinventory.component';
+import { DispatchComponent } from './components/dispatcher/dispatch/dispatch.component';
+import { PatrolcarsComponent } from './components/maintainence/patrolcars/patrolcars.component';
+import { HandheldsComponent } from './components/maintainence/handhelds/handhelds.component';
+import { AccessoriesComponent } from './components/maintainence/accessories/accessories.component';
+import { HandheldinventoryComponent } from './components/maintainence/deviceinventory/handheldinventory/handheldinventory.component';
+import { AccessoryinventoryComponent } from './components/maintainence/deviceinventory/accessoryinventory/accessoryinventory.component';
+import { EmployeesComponent } from './components/dispatcher/employees/employees.component';
+import { PatrolCarsinventoryComponent } from './components/maintainence/inventory/patrolcarsinventory/patrolcarsinventory.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -80,7 +92,9 @@ import { DxTreeViewModule } from "../../node_modules/devextreme-angular";
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
-    ChartsModule, DxTreeViewModule
+    ChartsModule, DxTreeViewModule,
+    FormsModule,DxSelectBoxModule,DxContextMenuModule,DxMenuModule,
+    DxPopupModule,DxDataGridModule,DxButtonModule ,DxTemplateModule,DxLoadIndicatorModule,DxLoadPanelModule, DxTabPanelModule,DxCheckBoxModule
   ],
   declarations: [
     AppComponent,
@@ -100,7 +114,17 @@ import { DxTreeViewModule } from "../../node_modules/devextreme-angular";
     BootstrapSelectDirective,
     BootstrapDatepickerDirective,
     ModalComponentDirective,
-    GroupByPipe
+    GroupByPipe,
+    DeviceinventoryComponent,
+    DispatchComponent,
+    DispatchComponent,
+    PatrolcarsComponent,
+    HandheldsComponent,
+    AccessoriesComponent,
+    HandheldinventoryComponent,
+    AccessoryinventoryComponent,
+    EmployeesComponent,
+    PatrolCarsinventoryComponent
   ],
   providers: [
     { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -115,7 +139,8 @@ import { DxTreeViewModule } from "../../node_modules/devextreme-angular";
     AccountEndpoint,
     LocalStoreManager,
     EndpointFactory,
-    ModalService
+    ModalService,
+    CommonService
   ],
   bootstrap: [AppComponent]
 })
