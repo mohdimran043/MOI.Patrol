@@ -9,7 +9,7 @@ import { ConfigurationService } from '../../services/configuration.service';
 
 import { AlertService, DialogType, MessageSeverity } from '../../services/alert.service';
 import { ModalService } from '../../services/modalservice';
-
+import { CommonService } from '../../services/common.service';
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
@@ -17,7 +17,14 @@ import { ModalService } from '../../services/modalservice';
   animations: [fadeInOut]
 })
 export class HomeComponent {
-  constructor(public configurations: ConfigurationService, private alertService: AlertService, private modalService: ModalService) {
+  constructor(public configurations: ConfigurationService, private alertService: AlertService, private modalService: ModalService,private svc:CommonService) {
+    // this.svc.GetOrganizationList().subscribe(resp =>
+    //   {
+    //      console.log("Home" + resp)
+    //     window.localStorage.setItem("Orgs",resp );
+    // },
+    //   error => {
+    //   });
   }
 
   Bootstrappopup() {

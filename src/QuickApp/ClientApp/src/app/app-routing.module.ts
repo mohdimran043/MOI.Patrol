@@ -3,7 +3,7 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-import { NgModule } from '@angular/core';
+import { NgModule ,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from "./components/login/login.component";
@@ -17,6 +17,12 @@ import { PatrolCarsinventoryComponent } from './components/maintainence/inventor
 import { HandheldsComponent } from './components/maintainence/handhelds/handhelds.component';
 import {AccessoriesComponent} from './components/maintainence/accessories/accessories.component';
 import { DispatchComponent } from './components/dispatcher/dispatch/dispatch.component';
+import {MapComponent} from './components/maps/map.component'
+import {MainComponent} from './components/maps/main/main.component';
+import {LayoutComponent} from './components/maps/layout/layout.component';
+import { EmployeesComponent } from './components/dispatcher/employees/employees.component';
+import { HandheldinventoryComponent } from './components/maintainence/deviceinventory/handheldinventory/handheldinventory.component';
+import { AccessoryinventoryComponent } from './components/maintainence/deviceinventory/accessoryinventory/accessoryinventory.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, canActivate: [AuthGuard], data: { title: "Home" } },
@@ -25,8 +31,12 @@ const routes: Routes = [
   { path: "patrolcars", component: PatrolcarsComponent, data: { title: "" } },
   { path: "patrolcarsinventory", component: PatrolCarsinventoryComponent, data: { title: "" } },
   { path: "handhelds", component: HandheldsComponent, data: { title: "" } },
+  { path: "handheldsinventory", component: HandheldinventoryComponent, data: { title: "" } },
   { path: "accessories", component: AccessoriesComponent, data: { title: "" } },
+  { path: "accessoriesinventory", component: AccessoryinventoryComponent, data: { title: "" } },
   { path: "dispatcher", component: DispatchComponent, data: { title: "" } },
+  { path: "persons", component: EmployeesComponent, data: { title: "" } },
+  { path: "map", component: LayoutComponent, data: { title: "" } },
   { path: "home", redirectTo: "/", pathMatch: "full" },
   { path: "**", component: NotFoundComponent, data: { title: "Page Not Found" } }
 ];
@@ -35,6 +45,9 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [AuthService, AuthGuard]
+  providers: [AuthService, AuthGuard],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+]
 })
 export class AppRoutingModule { }

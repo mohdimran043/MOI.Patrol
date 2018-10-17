@@ -56,7 +56,7 @@ onToolbarPreparing(e) {
 
   e.toolbarOptions.items.unshift({
       location: 'before',
-      template: 'Organization'
+      template: 'الأحوال'
   }, {
           location: 'before',
           widget: 'dxSelectBox',

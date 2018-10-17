@@ -3,7 +3,7 @@
 // Email: support@ebenmonney.com
 // ====================================================
 
-import { NgModule, ErrorHandler } from "@angular/core";
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from '@angular/platform-browser';
@@ -61,7 +61,7 @@ import { RoleEditorComponent } from "./components/controls/role-editor.component
 import { DxTreeViewModule } from "../../node_modules/devextreme-angular";
 
 import { DxMenuModule,DxContextMenuModule,DxSelectBoxModule,DxPopupModule,DxDataGridModule,DxButtonModule ,DxTemplateModule,DxLoadIndicatorModule,DxLoadPanelModule, DxTabPanelModule,DxCheckBoxModule } from "devextreme-angular";
-import { CommonService } from './services/common.service';
+
 import { DeviceinventoryComponent } from './components/maintainence/deviceinventory/deviceinventory.component';
 import { DispatchComponent } from './components/dispatcher/dispatch/dispatch.component';
 import { PatrolcarsComponent } from './components/maintainence/patrolcars/patrolcars.component';
@@ -71,6 +71,16 @@ import { HandheldinventoryComponent } from './components/maintainence/deviceinve
 import { AccessoryinventoryComponent } from './components/maintainence/deviceinventory/accessoryinventory/accessoryinventory.component';
 import { EmployeesComponent } from './components/dispatcher/employees/employees.component';
 import { PatrolCarsinventoryComponent } from './components/maintainence/inventory/patrolcarsinventory/patrolcarsinventory.component';
+import {MainComponent} from './components/maps/main/main.component';
+import {MapLeftNavDemoComponent} from './components/maps/map-left-nav.component';
+import {TopnavComponent} from './components/maps/topnav/topnav.component';
+import {SidenavComponent} from './components/maps/sidenav/sidenav.component';
+import {LayoutComponent} from './components/maps/layout/layout.component';
+import {MapComponent} from './components/maps/map.component'
+import { CommonService } from './services/common.service';
+import { SharedMapServiceService } from './services/shared-map-service.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   imports: [
@@ -124,7 +134,13 @@ import { PatrolCarsinventoryComponent } from './components/maintainence/inventor
     HandheldinventoryComponent,
     AccessoryinventoryComponent,
     EmployeesComponent,
-    PatrolCarsinventoryComponent
+    PatrolCarsinventoryComponent,
+    MapComponent,
+    MainComponent,
+    MapLeftNavDemoComponent,
+    SidenavComponent,
+    TopnavComponent,
+    LayoutComponent
   ],
   providers: [
     { provide: 'BASE_URL', useFactory: getBaseUrl },
@@ -140,8 +156,12 @@ import { PatrolCarsinventoryComponent } from './components/maintainence/inventor
     LocalStoreManager,
     EndpointFactory,
     ModalService,
-    CommonService
+    CommonService,
+    SharedMapServiceService
   ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+],
   bootstrap: [AppComponent]
 })
 export class AppModule {

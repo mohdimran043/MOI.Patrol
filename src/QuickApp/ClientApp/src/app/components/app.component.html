@@ -20,34 +20,35 @@
             <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink=""><span class="glyphicon glyphicon-home"></span></a></li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Maintainence</a>
+              <a class="nav-link dropdown-toggle" routerLink="/patrolcars" role="button" aria-haspopup="true" aria-expanded="false">الصيانه</a>
               <div class="dropdown-menu">
-                  <a class="dropdown-item" routerLink="/patrolcars">Patrol Cars</a>
+                  <a class="dropdown-item" routerLink="/patrolcars">الدوريات</a>
 
-                  <a class="dropdown-item" routerLink="/patrolcarsinventory">Patrol Cars Inventory</a>
-                  <a class="dropdown-item" routerLink="/handhelds">HandHeld</a>
-                <a class="dropdown-item" routerLink="/mapviewer">HandHeld Inventory</a>
+                  <a class="dropdown-item" routerLink="/patrolcarsinventory">تقارير الاستلام والتسليم الأجهزة</a>
+                  <a class="dropdown-item" routerLink="/handhelds">الأجهزة</a>
+                <a class="dropdown-item" routerLink="/handheldsinventory">تقارير الاستلام والتسليم الدوريات</a>
                 <a class="dropdown-item"  routerLink="/accessories">Accessories</a>
-                <a class="dropdown-item" routerLink="/mapviewer">Accessory Inventory</a>
+                <a class="dropdown-item" routerLink="/accessoriesinventory">Accessory Inventory</a>
              
                 </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Dispatcher</a>
+              <a class="nav-link dropdown-toggle" routerLink="/dispatcher" role="button" aria-haspopup="true" aria-expanded="false">الأحوال</a>
               <div class="dropdown-menu">
-                  <a class="dropdown-item"  routerLink="/dispatcher">Dispatcher</a>
+                  <a class="dropdown-item"  routerLink="/dispatcher">كشف التوزيع</a>
+                  <a class="dropdown-item"  routerLink="/persons">الأفراد</a>
                 <div class="dropdown-divider"></div>
                
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">Operations</a>
+              <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">العمليات</a>
               <div class="dropdown-menu">
                
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" data-toggle="dropdown" href="#">Map Viewer</a>
+              <a class="nav-link" data-toggle="dropdown" routerLink="/map" role="button">Map Viewer</a>
 
             </li>
           </ul>

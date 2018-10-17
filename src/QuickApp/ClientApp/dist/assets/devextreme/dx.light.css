@@ -68,7 +68,7 @@
 }
 .dx-datagrid .dx-header-filter {
   position: relative;
-  color: #959595;
+  color: black;
   font: 14px/1 DXIcons;
 }
 .dx-datagrid .dx-header-filter:before {
@@ -259,7 +259,7 @@
   position: relative;
 }
 .dx-pivotgrid-fields-container .dx-sort {
-  color: #959595;
+  color: black;
   font-size: 14px;
   width: 14px;
 }
@@ -276,7 +276,7 @@
   content: "\f052";
 }
 .dx-pivotgrid-fields-container .dx-header-filter {
-  color: #959595;
+  color: black;
   font: 14px/1 DXIcons;
   font-size: 14px;
   width: 14px;
@@ -388,7 +388,7 @@
   box-sizing: content-box;
 }
 .dx-pivotgrid .dx-pivotgrid-area td {
-  color: #959595;
+  color: black;
   padding: 7px 10px;
 }
 .dx-pivotgrid .dx-pivotgrid-fields-area-head td {
@@ -801,7 +801,7 @@
 }
 .dx-treelist-container .dx-header-filter {
   position: relative;
-  color: #959595;
+  color: black;
   font: 14px/1 DXIcons;
 }
 .dx-treelist-container .dx-header-filter:before {
@@ -3185,7 +3185,7 @@
   background-size: 100%;
 }
 .dx-list-item.dx-list-item-ghost-reordering.dx-state-focused.dx-state-hover {
-  color: #959595;
+  color: black;
   background: #fff;
   border-top: 1px solid rgba(51, 122, 183, 0.5);
   border-bottom: 1px solid rgba(51, 122, 183, 0.5);
@@ -3447,7 +3447,7 @@
   background-size: 100%;
 }
 .dx-device-mobile .dx-list-item.dx-list-item-ghost-reordering.dx-state-focused.dx-state-hover {
-  color: #959595;
+  color: black;
   background: #fff;
   border-top: 1px solid rgba(51, 122, 183, 0.5);
   border-bottom: 1px solid rgba(51, 122, 183, 0.5);
@@ -5577,7 +5577,7 @@
 .dx-pivottabs-tab,
 .dx-pivottabs-ghosttab {
   padding: 10px;
-  color: #959595;
+  color: black;
   font-size: 40px;
 }
 .dx-pivottabs-tab-selected {
@@ -6286,7 +6286,7 @@
 .dx-datagrid-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item {
   margin-bottom: 10px;
   background-color: #fff;
-  color: #959595;
+  color: black;
   font-weight: normal;
   border: 1px solid #ddd;
   padding: 7px;
@@ -6298,7 +6298,7 @@
   -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #959595;
+  color: black;
   font-weight: normal;
   padding: 7px;
   border: 1px solid rgba(51, 122, 183, 0.5);
@@ -6344,7 +6344,7 @@
   background-color: transparent;
 }
 .dx-datagrid-headers {
-  color: #959595;
+  color: black;
   font-weight: normal;
   -ms-touch-action: pinch-zoom;
   touch-action: pinch-zoom;
@@ -6803,7 +6803,7 @@
   touch-action: pinch-zoom;
 }
 .dx-datagrid-group-panel .dx-group-panel-message {
-  color: #959595;
+  color: black;
   font-weight: normal;
   padding: 7px;
   border-top: 1px solid transparent;
@@ -6811,14 +6811,14 @@
 }
 .dx-datagrid-group-panel .dx-group-panel-item {
   margin-right: 10px;
-  color: #959595;
+  color: black;
   font-weight: normal;
   border: 1px solid #ddd;
   padding: 7px;
 }
 .dx-datagrid-group-panel .dx-block-separator {
   margin-right: 10px;
-  color: #959595;
+  color: black;
   font-weight: normal;
   padding: 8px;
   background-color: #eeeeee;
@@ -6830,7 +6830,7 @@
   border-top: none;
 }
 .dx-datagrid-rowsview .dx-row.dx-group-row {
-  color: #959595;
+  color: black;
   background-color: #f7f7f7;
   font-weight: bold;
 }
@@ -6850,7 +6850,7 @@
   font-size: 18px;
   text-align: center;
   line-height: 18px;
-  color: #959595;
+  color: black;
 }
 .dx-datagrid-group-opened:before {
   content: "\f001";
@@ -6867,7 +6867,7 @@
   font-size: 18px;
   text-align: center;
   line-height: 18px;
-  color: #959595;
+  color: black;
 }
 .dx-datagrid-group-closed:before {
   content: "\f04e";
@@ -6925,7 +6925,7 @@
   font-size: 18px;
   text-align: center;
   line-height: 18px;
-  color: #959595;
+  color: black;
 }
 .dx-pivotgrid .dx-pivotgrid-collapsed .dx-expand:before {
   content: "\f04e";
@@ -6944,7 +6944,7 @@
   font-size: 18px;
   text-align: center;
   line-height: 18px;
-  color: #959595;
+  color: black;
 }
 .dx-pivotgrid .dx-pivotgrid-expanded .dx-expand:before {
   content: "\f001";
@@ -7319,7 +7319,7 @@
 .dx-treelist-column-chooser .dx-overlay-content .dx-popup-content .dx-column-chooser-item {
   margin-bottom: 10px;
   background-color: #fff;
-  color: #959595;
+  color: black;
   font-weight: normal;
   border: 1px solid #ddd;
   padding: 7px;
@@ -7331,7 +7331,7 @@
   -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.2);
-  color: #959595;
+  color: black;
   font-weight: normal;
   padding: 7px;
   border: 1px solid rgba(51, 122, 183, 0.5);
@@ -7377,7 +7377,7 @@
   background-color: transparent;
 }
 .dx-treelist-headers {
-  color: #959595;
+  color: black;
   font-weight: normal;
   -ms-touch-action: pinch-zoom;
   touch-action: pinch-zoom;
@@ -7833,7 +7833,7 @@
 .dx-treelist-rowsview .dx-treelist-empty-space {
   position: relative;
   display: inline-block;
-  color: #959595;
+  color: black;
   width: 14px;
   font: 14px/1 DXIcons;
 }
@@ -7892,7 +7892,7 @@
   margin-top: -8px;
 }
 .dx-treelist-rowsview .dx-selection .dx-treelist-empty-space {
-  color: #959595;
+  color: black;
 }
 .dx-treelist-rowsview .dx-treelist-cell-expandable {
   white-space: nowrap;
@@ -9453,7 +9453,7 @@
   vertical-align: top;
   text-align: right;
   font-size: 16px;
-  color: #959595;
+  color: black;
 }
 .dx-scheduler-work-space-month .dx-scheduler-date-table-cell > div {
   padding-right: 6px;
@@ -10268,7 +10268,7 @@
 }
 .dx-scheduler-all-day-table-cell.dx-state-hover,
 .dx-scheduler-date-table-cell.dx-state-hover {
-  background-color: #959595;
+  background-color: black;
 }
 .dx-scheduler-all-day-table-cell.dx-state-hover.dx-state-focused,
 .dx-scheduler-date-table-cell.dx-state-hover.dx-state-focused {
@@ -12156,7 +12156,7 @@
 .dx-scheduler-all-day-table-cell.dx-state-hover,
 .dx-scheduler-date-table-cell.dx-state-hover {
   background-color: #f5f5f5;
-  color: #959595;
+  color: black;
 }
 .dx-recurrence-editor-container {
   position: relative;
@@ -12264,7 +12264,7 @@
   border-bottom: 1px solid rgba(221, 221, 221, 0.6);
 }
 .dx-scheduler-dropdown-appointment-date {
-  color: #959595;
+  color: black;
 }
 .dx-scheduler-work-space-grouped:not(.dx-scheduler-work-space-all-day):not(.dx-scheduler-timeline):not(.dx-scheduler-agenda):not(.dx-scheduler-work-space-vertical-grouped):not(.dx-scheduler-work-space-horizontal-grouped)[dx-group-row-count='1'] .dx-scheduler-header-scrollable {
   height: 81px;

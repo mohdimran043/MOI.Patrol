@@ -51,7 +51,7 @@ LoadData()
 onToolbarPreparing(e) {
   e.toolbarOptions.items.unshift({
       location: 'before',
-      template: 'Organization'
+      template: 'الأحوال'
   }, {
           location: 'before',
           widget: 'dxSelectBox',
@@ -71,7 +71,7 @@ onToolbarPreparing(e) {
           }
       },{
         location: 'before',
-        template: 'Shifts'
+        template: 'الشفت'
     },{
         location: 'before',
         widget: 'dxSelectBox',

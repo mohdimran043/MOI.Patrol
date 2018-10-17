@@ -214,7 +214,13 @@ strt =JSON.parse(window.localStorage.getItem("Orgs"));
           widget: 'dxSelectBox',
           options: {
               width: 200,
-              items: strt,
+              items: [{
+                value: '1',
+                text: ' الصناعية'
+            }, {
+                value: '2',
+                text: ' شمال'
+            }],
               displayExpr: 'text',
               valueExpr: 'value',
               value:'1',

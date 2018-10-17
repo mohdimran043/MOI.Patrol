@@ -2,7 +2,7 @@
   <form (ngSubmit)="onSubmit()" method="post" enctype="multipart/form-data">
 
 <header class="pageHeader">
-  <h3><i class="fa fa-handshake-o fa-lg page-caption" aria-hidden="true"></i> Dispatch</h3>
+  <h3><i class="fa fa-handshake-o fa-lg page-caption" aria-hidden="true"></i> الأحوال</h3>
 </header>
 
                 <dx-data-grid 
@@ -43,17 +43,21 @@
                 [closeOnOutsideClick]="false"
                 (onShown)="onShown()">
             </dx-load-panel>
-            <dxi-column dataField="sectordesc" [groupIndex]="0"></dxi-column>
-            <dxi-column dataField="milnumber" ></dxi-column>
-            <dxi-column dataField="rankdesc" [groupIndex]="2"></dxi-column>
-            <dxi-column dataField="personname"></dxi-column>
-            <dxi-column dataField="callerid"></dxi-column>
-            <dxi-column dataField="platenumber" ></dxi-column>
-            <dxi-column dataField="sunrisetimestamp"></dxi-column>
-            <dxi-column dataField="sunsettimestamp"></dxi-column>
-            <dxi-column dataField="personmobile"></dxi-column>
-            <dxi-column dataField="laststatechangetimestamp"></dxi-column>
-            <dxi-column dataField="PatrolPersonStateID"></dxi-column>
+            <dxi-column dataField="sectordesc" [groupIndex]="0" caption="القطاع"></dxi-column>
+            <dxi-column dataField="milnumber" caption="الرقم العسكري"></dxi-column>
+            <dxi-column dataField="rankdesc" [groupIndex]="2" caption="الرتبه"></dxi-column>
+            <dxi-column dataField="personname" caption="الاسم"></dxi-column>
+            <dxi-column dataField="callerid" caption="النداء"></dxi-column>
+            <dxi-column dataField="platenumber"  caption="الدورية"></dxi-column>
+            <dxi-column dataField="sunrisetimestamp" caption="شروق"></dxi-column>
+            <dxi-column dataField="sunsettimestamp" caption="غروب"></dxi-column>
+            <dxi-column dataField="personmobile" caption="الجوال"></dxi-column>
+            <dxi-column dataField="laststatechangetimestamp" caption="وقت الحالة"></dxi-column>
+            <dxi-column dataField="PatrolPersonStateID" caption="الحالة"></dxi-column>
+            <dxi-column  caption=""  [allowFiltering]="false" [width]="50" cellTemplate="maptemplate" ></dxi-column>
+            <div *dxTemplate="let data of 'maptemplate'">
+               <a  routerLink="/map" > <img src="../../../../assets/images/haritayikaydir_r_glow.png"  /></a>
+                </div>
               </dx-data-grid>
           </form>
 </div>
