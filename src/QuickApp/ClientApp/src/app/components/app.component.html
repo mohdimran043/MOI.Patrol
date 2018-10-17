@@ -44,7 +44,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" routerLink="/mapviewer" role="button" aria-haspopup="true" aria-expanded="false">العمليات</a>
               <div class="dropdown-menu">
-               
+                  <a class="dropdown-item"  routerLink="/mapviewer">الكشف</a>
+                  <a class="dropdown-item"  routerLink="/mapviewer">البلاغات</a>
+                  <a class="dropdown-item"  routerLink="/mapviewer">اعدادات - نوع البلاغ</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -54,7 +56,7 @@
           </ul>
 
           <ul class="app-component nav navbar-nav nav-pills navBarPadding navbar-right">
-            <li (click)="logout()"><a href="javascript:;"><span class="glyphicon glyphicon-log-out"></span> {{'mainMenu.Logout' | translate}}</a></li>
+            <li (click)="logout()"><a href="javascript:;"><span class="glyphicon glyphicon-log-out"></span> تسجيل الخروج</a></li>
           </ul>
           <p class="app-component navbar-text navbar-right notifications-popup">
             {{'app.Welcome' | translate}}
