@@ -11,9 +11,12 @@ import {personcls} from '../components/dispatcher/employees/personcls';
 
 
 export class CommonService {
-  private api_url: any = 'http://localhost:2018';
+  private api_url: any = document.getElementsByTagName('base')[0].href;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+
+    //console.log('sss' + document.getElementsByTagName('base')[0].href);
+   }
   public GetPatrolCarList(ahwal:number){
     return this.http.post(this.api_url + "/api/maintainence/patrolcarslist", ahwal, { responseType: 'text' })
     }

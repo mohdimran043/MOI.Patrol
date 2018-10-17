@@ -19,7 +19,7 @@ export class SharedMapServiceService {
   public RngSimVal:any;
   
   public LngLat:any;
-  private api_url: any = 'http://localhost:2018/api/map';
+  private api_url:any;
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'text/html',
@@ -63,7 +63,7 @@ export class SharedMapServiceService {
   ShowReportObsrv = this.ShowReportEvnt.asObservable();
 
   constructor(private http: HttpClient) {
-    this.api_url = 'http://localhost:2018/' + 'api/map';
+    this.api_url = document.getElementsByTagName('base')[0].href + 'api/map';
   }
 
  
