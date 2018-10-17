@@ -69,7 +69,7 @@
                   (onShown)="onShown()">
               </dx-load-panel>
 
-              <dxi-column dataField="serial" ></dxi-column>
+              <dxi-column dataField="serial" caption="رقم الجهاز" ></dxi-column>
               <dxi-column dataField="barcode" caption="رقم الباركود"></dxi-column>
               <dxi-column dataField="defective" caption="غير صالحة؟"  [allowFiltering]="false" editCellTemplate="defCellTemplate" cellTemplate="defchecktemplate"></dxi-column>
               <div *dxTemplate="let data of 'defCellTemplate'">
