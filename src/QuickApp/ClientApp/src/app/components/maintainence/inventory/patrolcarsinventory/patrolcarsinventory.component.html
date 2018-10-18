@@ -14,10 +14,10 @@
                 [selectedRowKeys]="[]"
                 (onToolbarPreparing)="onToolbarPreparing($event)"
               >    
-                <dxo-paging [pageSize]="5"></dxo-paging>
+                <dxo-paging [pageSize]="20"></dxo-paging>
                 <dxo-pager 
                 [showPageSizeSelector]="true"
-                [allowedPageSizes]="[5, 10, 20]"
+                [allowedPageSizes]="[20, 50, 100]"
                 [showInfo]="true">
             </dxo-pager>
                
@@ -27,7 +27,6 @@
             <dxo-header-filter 
             [visible]="true"></dxo-header-filter>
             <dxo-column-chooser [enabled]="true" mode="select"></dxo-column-chooser>
-            <dxo-state-storing [enabled]="true" type="localStorage" storageKey="storage"></dxo-state-storing>
             
             <dxo-filter-row [visible]="true"></dxo-filter-row>
             <dxo-header-filter [visible]="true"></dxo-header-filter>

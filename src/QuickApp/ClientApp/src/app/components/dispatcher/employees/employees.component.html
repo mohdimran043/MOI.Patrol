@@ -69,7 +69,7 @@
               <dxo-header-filter
               [visible]="true"></dxo-header-filter>
               <dxo-column-chooser [enabled]="true" mode="select"></dxo-column-chooser>
-              <dxo-state-storing [enabled]="true" type="localStorage" storageKey="storage"></dxo-state-storing>
+              
               <dxo-grouping [autoExpandAll]="true"></dxo-grouping>
               <dxo-filter-row [visible]="true"></dxo-filter-row>
               <dxo-header-filter [visible]="true"></dxo-header-filter>
@@ -85,11 +85,11 @@
                   (onShown)="onShown()">
               </dx-load-panel>
 
-              <dxi-column dataField="devicenumber" ></dxi-column>
-              <dxi-column dataField="type" editCellTemplate="typecelltemplate" [groupIndex]="1"></dxi-column>
-              <dxi-column dataField="model"></dxi-column>
-              <dxi-column dataField="barcode"></dxi-column>
-              <dxi-column dataField="defective"></dxi-column>
+              <dxi-column dataField="devicenumber" caption="الرقم العسكري" ></dxi-column>
+              <dxi-column dataField="type" caption="الاسم" editCellTemplate="typecelltemplate" ></dxi-column>
+              <dxi-column dataField="model" caption="الجوال"></dxi-column>
+              <dxi-column dataField="barcode" caption="الرتبه"></dxi-column>
+              <!-- <dxi-column dataField="defective"></dxi-column>
               <dxi-column dataField="rental" editCellTemplate="dataCellTemplate"></dxi-column>
               <div *dxTemplate="let data of 'dataCellTemplate'">
                 <dx-check-box
@@ -99,7 +99,7 @@
                 </div>
                 <div *dxTemplate="let data of 'typecelltemplate'">
 
-                  </div>
+                  </div> -->
                 </dx-data-grid>
               <!-- </div>
 
