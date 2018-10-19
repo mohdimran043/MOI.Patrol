@@ -64,7 +64,8 @@ namespace PatrolWebApp.Controllers
     {
 
         // public String constr2 = "Server=BCI666016PC57;Database=patrols;User Id =patrol;Password=patrol;";
-        public String constr = "server=localhost;Port=5432;User Id=postgres;password=admin;Database=Patrols";
+        public String constr = "server=10.2.124.32;Port=5432;User Id=postgres;password=12345;Database=Patrols";
+      //  public String constr = "server=localhost;Port=5432;User Id=postgres;password=12345;Database=Patrols";
 
 
         [HttpPost("addpatrolcar")]
