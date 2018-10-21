@@ -21,8 +21,8 @@ import {MapComponent} from './components/maps/map.component'
 import {MainComponent} from './components/maps/main/main.component';
 import {LayoutComponent} from './components/maps/layout/layout.component';
 import { EmployeesComponent } from './components/dispatcher/employees/employees.component';
-import { HandheldinventoryComponent } from './components/maintainence/deviceinventory/handheldinventory/handheldinventory.component';
-import { AccessoryinventoryComponent } from './components/maintainence/deviceinventory/accessoryinventory/accessoryinventory.component';
+import { HandheldinventoryComponent } from './components/maintainence/inventory/handheldinventory/handheldinventory.component';
+import { AccessoryinventoryComponent } from './components/maintainence/inventory/accessoryinventory/accessoryinventory.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, canActivate: [AuthGuard], data: { title: "Home" } },

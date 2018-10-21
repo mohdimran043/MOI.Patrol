@@ -62,13 +62,13 @@ import { DxTreeViewModule } from "../../node_modules/devextreme-angular";
 
 import { DxMenuModule,DxContextMenuModule,DxSelectBoxModule,DxPopupModule,DxDataGridModule,DxButtonModule ,DxTemplateModule,DxLoadIndicatorModule,DxLoadPanelModule, DxTabPanelModule,DxCheckBoxModule } from "devextreme-angular";
 
-import { DeviceinventoryComponent } from './components/maintainence/deviceinventory/deviceinventory.component';
+
 import { DispatchComponent } from './components/dispatcher/dispatch/dispatch.component';
 import { PatrolcarsComponent } from './components/maintainence/patrolcars/patrolcars.component';
 import { HandheldsComponent } from './components/maintainence/handhelds/handhelds.component';
 import { AccessoriesComponent } from './components/maintainence/accessories/accessories.component';
-import { HandheldinventoryComponent } from './components/maintainence/deviceinventory/handheldinventory/handheldinventory.component';
-import { AccessoryinventoryComponent } from './components/maintainence/deviceinventory/accessoryinventory/accessoryinventory.component';
+import { HandheldinventoryComponent } from './components/maintainence/inventory/handheldinventory/handheldinventory.component';
+import { AccessoryinventoryComponent } from './components/maintainence/inventory/accessoryinventory/accessoryinventory.component';
 import { EmployeesComponent } from './components/dispatcher/employees/employees.component';
 import { PatrolCarsinventoryComponent } from './components/maintainence/inventory/patrolcarsinventory/patrolcarsinventory.component';
 import {MainComponent} from './components/maps/main/main.component';
@@ -125,7 +125,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     BootstrapDatepickerDirective,
     ModalComponentDirective,
     GroupByPipe,
-    DeviceinventoryComponent,
     DispatchComponent,
     DispatchComponent,
     PatrolcarsComponent,
