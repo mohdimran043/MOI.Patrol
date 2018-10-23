@@ -31,6 +31,7 @@
     "@ngx-translate/core": "^10.0.2",
     "@swimlane/ngx-datatable": "^13.0.1",
     "@turf/turf": "^5.1.6",
+    "angular-osm": "^1.2.2",
     "bootstrap": "^3.3.7",
     "bootstrap-datepicker": "^1.8.0",
     "bootstrap-select": "^1.13.1",

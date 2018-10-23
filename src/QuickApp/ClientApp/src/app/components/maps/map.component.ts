@@ -79,7 +79,8 @@ export class MapComponent implements OnInit {
   </table>
   `;
 
-  style = 'mapbox://styles/mapbox/' + this.layerId + '-v9';
+ style = 'mapbox://styles/mapbox/' + this.layerId + '-v9';
+ //style = 'http://10.2.124.37:8080/data/v3/';
 
   lat = 51.51503213033115;
   lng = 25.303961620211695;
@@ -161,9 +162,53 @@ export class MapComponent implements OnInit {
     /// locate the user
 
 
-    this.buildMap()
+    //this.buildMap()
+this.buildMap2();
+  }
+
+  buildMap2() {
+    this.ZoomVal = 14;
+    this.map = new mapboxgl.Map({
+      container: 'map',
+      style:  new URL( "http://10.2.124.37:8080/data/v3/")
+     
+    });
+
+    
+
+     /*  this.map.on('style.load', () => {
+        const waiting = () => {
+          if (!this.map.isStyleLoaded()) {
+            setTimeout(waiting, 200);
+          } else {
+     
+      this.map.addLayer({
+          "id": "mapillary",
+          "type": "line",
+          "source": {
+              "type": "vector",
+              "tiles": ["http://10.2.124.37:8080/data/v3/#2.13/5.76/16.48"],
+              "minzoom": 6,
+              "maxzoom": 14
+          },
+          "source-layer": "mapillary-sequences",
+          "layout": {
+              "line-cap": "round",
+              "line-join": "round"
+          },
+          "paint": {
+              "line-opacity": 0.6,
+              "line-color": "rgb(53, 175, 109)",
+              "line-width": 2
+          }
+      }, 'waterway-label');
+    }
+  };
+  waiting();
+  }); */
 
   }
+  
 
   buildMap() {
     this.ZoomVal = 14;
