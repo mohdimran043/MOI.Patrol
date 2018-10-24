@@ -162,15 +162,15 @@ export class MapComponent implements OnInit {
     /// locate the user
 
 
-    //this.buildMap()
-this.buildMap2();
+  this.buildMap()
+//this.buildMap2();
   }
 
   buildMap2() {
     this.ZoomVal = 14;
     this.map = new mapboxgl.Map({
       container: 'map',
-      style:  new URL( "http://10.2.124.37:8080/data/v3/")
+      style:  new URL( "http://10.2.124.37:8080/styles/osm-bright/style.json")
      
     });
 
